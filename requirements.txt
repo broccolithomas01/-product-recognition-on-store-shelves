@@ -1,0 +1,16 @@
+# Core
+numpy
+opencv-python
+matplotlib
+
+# Deep learning
+torch
+torchvision
+
+# Task C — detection & classification
+# detectron2  (install from source, see https://detectron2.readthedocs.io)
+transformers          # CLIP
+pillow
+
+# Training utilities
+pandas
