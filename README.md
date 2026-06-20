@@ -5,8 +5,8 @@
 **Computer Vision project** · keypoint matching · Generalized Hough voting · deep object detection · vision-language classification
 
 <p align="center">
-  <img src="assets/task_c_detection.png" width="48%" alt="Object detection on a dense shelf"/>
-  <img src="assets/task_c_classification.png" width="48%" alt="Final per-box classification"/>
+  <img src="assets/task_c_detection2.png" width="48%" alt="Object detection on a dense shelf"/>
+  <img src="assets/task_c_classification2.png" width="48%" alt="Final per-box classification"/>
 </p>
 
 <p align="center"><sub>Final pipeline on the full dataset: dense object detection (left, 62 boxes) followed by per-box classification into 27 classes (right).</sub></p>
@@ -160,7 +160,8 @@ A single-class detector finds *as many cereal boxes as possible*. The model uses
 **SKU-110k** dataset of cluttered shelves to detect one generic "product" class.
 
 <p align="center">
-  <img src="assets/task_c_detection.png" width="70%" alt="Task C detection"/>
+  <img src="assets/task_c_detection.png" width="48%" alt="Task C – scene 6"/>
+  <img src="assets/task_c_detection3.png" width="48%" alt="Task C – scene 7"/>
 </p>
 <p align="center"><sub>62 product boxes detected on a dense shelf.</sub></p>
 
@@ -187,8 +188,10 @@ def mask_logits_to_allowed(logits_1d, allowed_idx): ...
 > and stabilises the result. The trade-off: masking narrows ambiguity rather than removing it —
 > genuine uncertainty is preserved and propagated.
 
+
 <p align="center">
-  <img src="assets/task_c_classification.png" width="70%" alt="Task C classification"/>
+  <img src="assets/task_c_classification.png" width="48%" alt="Task C – scene 6"/>
+  <img src="assets/task_c_classification3.png" width="48%" alt="Task C – scene 7"/>
 </p>
 <p align="center"><sub>Final per-box class assignment over the full 27-class catalogue.</sub></p>
 
